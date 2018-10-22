@@ -1,0 +1,5 @@
+<!--pages/test/test.wxml-->
+<view>
+  <text>信息：{{info}}</text>
+  <button bindtap="onChange">改变信息</button>
+</view>

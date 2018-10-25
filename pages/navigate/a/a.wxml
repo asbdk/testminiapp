@@ -1,0 +1,13 @@
+<!--pages/navigate/a/a.wxml-->
+<!-- <wxs module="tools">
+    var reverse = function(str){
+        return str.split("").reverse().join("");
+    }
+    module.exports.reverse = reverse;
+</wxs>
+ -->
+ <view>
+<text>pages/navigate/a/a.wxml</text>
+<text>{{reverseInfo}}</text>
+<include src="../common/common"></include>
+</view>

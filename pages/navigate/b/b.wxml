@@ -1,0 +1,7 @@
+<!--pages/navigate/b/b.wxml-->
+<view>
+<text>pages/navigate/b/b.wxml</text>
+
+<include src="../common/common"></include>
+</view>
+

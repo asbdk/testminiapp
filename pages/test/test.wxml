@@ -1,5 +1,26 @@
 <!--pages/test/test.wxml-->
 <view>
+  <view >
+    <text>我的</text>
+  </view>
   <text>信息：{{info}}</text>
   <button bindtap="onChange">改变信息</button>
+  <view wx:for="{{ary}}" wx:for-item="element" wx:for-index="i">
+    <text>{{element}} ： {{i}}</text>
+  </view>
+  <view wx:for="10">
+    <text>{{item}}</text>
+    <i class="iconfont icon-dianying" style="color:blue;font-size:20pt" ></i>
+    <view class="bg"></view>
+  </view>
+  <view >
+    <view bindtap="outerview">
+      <text>外层view</text>
+      <view bindtap="innerview">
+        <text>内层view</text>
+        </view>
+    </view>
+    
+  </view>
+
 </view>

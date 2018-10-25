@@ -1,25 +1,11 @@
-// pages/test/test.js
+// pages/navigate/c/c.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    info:"",
-    ary:["a","b","c","d"],
-  },
 
-  onChange(){
-    this.setData({
-      info:"info is changed"
-    });
-  },
-  outerview(e){
-    console.log(e.target,e.currentTarget);
-  },
-  innerview(e){
-    
-    console.log(e.target,e.currentTarget);
   },
 
   /**
@@ -62,25 +48,6 @@ Page({
    */
   onPullDownRefresh: function () {
 
-    console.log("刷新开始");
-    
-    // wx.startPullDownRefresh({
-    //   success:function(){
-    //     // console.log("刷新开始");
-    //     // setTimeout(() => {
-          
-    //     //   wx.stopPullDownRefresh({
-    //     //     success:function(){
-    //     //       console.log("刷新停止");
-    //     //     }
-    //     //   });
-    //     // },2000)
-    //   },
-    //   complete:function(){
-
-    //     // console.log("刷新开始");
-    //   }
-    // })
   },
 
   /**

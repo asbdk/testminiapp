@@ -1,32 +1,29 @@
-// pages/test/test.js
+// pages/navigate/a/a.js
+import func from "../../../utils/common";
+import {formatTime} from "../../../utils/util";
+// const {formatTime} = require("../../../utils/util");
+// const func = require("../../../utils/common").default;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    info:"",
-    ary:["a","b","c","d"],
+    reverseInfo:""
   },
-
-  onChange(){
-    this.setData({
-      info:"info is changed"
-    });
-  },
-  outerview(e){
-    console.log(e.target,e.currentTarget);
-  },
-  innerview(e){
-    
-    console.log(e.target,e.currentTarget);
+  reverse(str){
+    return str.split("").reverse().join("");
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      reverseInfo:this.reverse("hello miniapps")
+    })
+    func();
+    console.log(formatTime(new Date()));
   },
 
   /**
@@ -62,25 +59,6 @@ Page({
    */
   onPullDownRefresh: function () {
 
-    console.log("刷新开始");
-    
-    // wx.startPullDownRefresh({
-    //   success:function(){
-    //     // console.log("刷新开始");
-    //     // setTimeout(() => {
-          
-    //     //   wx.stopPullDownRefresh({
-    //     //     success:function(){
-    //     //       console.log("刷新停止");
-    //     //     }
-    //     //   });
-    //     // },2000)
-    //   },
-    //   complete:function(){
-
-    //     // console.log("刷新开始");
-    //   }
-    // })
   },
 
   /**

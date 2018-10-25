@@ -1,0 +1,3 @@
+/* pages/navigate/a/a.wxss */
+
+@import "../common/common.wxss";

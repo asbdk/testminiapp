@@ -1,0 +1,5 @@
+/* pages/navigate/common/common.wxss */
+
+.nav{
+    color:red
+}

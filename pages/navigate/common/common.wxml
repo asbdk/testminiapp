@@ -1,0 +1,8 @@
+<!--pages/navigate/common/common.wxml-->
+<view>
+  
+<navigator class="nav" url="/pages/navigate/a/a" open-type='navigateTo'>跳转A123</navigator>
+<navigator url="/pages/navigate/b/b" open-type='reLaunch'>跳转B</navigator>
+<navigator url="/pages/navigate/c/c" open-type='reLaunch'>跳转C</navigator>
+<navigator url="/pages/navigate/d/d" open-type='reLaunch'>跳转D</navigator>
+</view>
